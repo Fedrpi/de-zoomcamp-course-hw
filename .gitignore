@@ -1,4 +1,5 @@
 .vscode
+**/.venv
 env
 gcp
 **/ny_taxi_postgres_data
@@ -9,3 +10,9 @@ tmp
 **/data/*
 logs
 **/__pycache__
+**/raw_data/*
+
+*.duckdb
+*.duckdb.wal
+
+**/uv.lock
