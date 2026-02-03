@@ -9,7 +9,7 @@ conn.execute("INSTALL postgres; LOAD postgres;")
 
 # Подключаемся к PostgreSQL
 conn.execute("""
-    ATTACH 'dbname=ny_taxi user=root password=root host=localhost port=5432'
+    ATTACH 'dbname=ny_taxi user=user1 password=123QWEqwe host=rc1b-fsujt8uvt48qtnei.mdb.yandexcloud.net port=6432 sslmode=verify-full'
     AS pg (TYPE POSTGRES)
 """)
 
