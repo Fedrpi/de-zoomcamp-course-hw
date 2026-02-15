@@ -1,0 +1,26 @@
+taxi_rides_ny:
+  target: dev
+  outputs:
+    # DuckDB Development profile
+    dev:
+      type: duckdb
+      path: taxi_rides_ny.duckdb
+      schema: dev
+      threads: 1
+      extensions:
+        - parquet
+      settings:
+        memory_limit: "2GB"
+        preserve_insertion_order: false
+
+    # DuckDB Production profile
+    prod:
+      type: duckdb
+      path: taxi_rides_ny.duckdb
+      schema: prod
+      threads: 1
+      extensions:
+        - parquet
+      settings:
+        memory_limit: "2GB"
+        preserve_insertion_order: false
