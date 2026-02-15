@@ -16,3 +16,6 @@ logs
 *.duckdb.wal
 
 **/uv.lock
+
+.zed
+.serena
