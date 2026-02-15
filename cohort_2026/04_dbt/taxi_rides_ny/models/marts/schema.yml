@@ -133,6 +133,11 @@ models:
       - name: payment_type
         description: Payment method code
         data_type: integer
+        data_tests:
+        - accepted_values:
+            arguments:
+              values: [1, 2, 3, 4, 5]
+              quote: false
       - name: payment_type_description
         description: Human-readable payment method description
         data_type: string
