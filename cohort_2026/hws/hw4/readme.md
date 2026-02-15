@@ -53,7 +53,7 @@ where service_type = 'Green'
   and date_part('month', revenue_month) = '10';
 ```
 
-Answer: 1925130
+Answer: 384624
 
 ## Question 6
 
